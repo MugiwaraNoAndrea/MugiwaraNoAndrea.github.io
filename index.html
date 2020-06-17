@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Honolulú's Life</title>
+	<link rel="icon" type= "image/png"><href="file:///C:/Users/Andrea/Desktop/Web_ACINFANTE/Img/miniatura.png" Sizes: "20x20"/>
+	
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">  
+  </head>
+  <body>
+	<div class= "menu">
+	  <div class="container-fluid"></div>
+	 <nav>
+		 <div id="marker"></div>
+		 <a href="#">Inicio</a>
+		 <a href="#presentacion">Presentación</a>
+		 <a href="#isla">La Isla</a>
+		 <a href="#impacto">Impacto Ambiental</a>
+		 <a href="#fin">¿Fin?</a>
+	 </nav>
+     <script type="text/javascript">
+	 	var marker = document.querySelector('#marker');
+		var item = document.querySelectorAll('nav a');
+		
+		function indicator(e){
+			marker.style.left = e.offsetLeft+"px";
+			marker.style.width = e.offsetWidth+"px";
+		}
+		
+		 item.forEach(link =>{
+			 link.addEventListener('click',(e)=>{
+				 indicator (e.target);
+			 })
+		 })
+		 </script>	
+	</div>
+	<div>  
+	<div class="box">
+		<div class="glass"></div>
+		<div class="content">
+		<h3><b>¿Qué es relleno de plástico?</b></h3>
+			<p>Relleno de plástico, es un cortometraje animado, que sitúa al espectador en el año 2080 donde la contaminación en la tierra ha alcanzado niveles extremos, sobretodo la contaminación por residuos plásticos ha llegado a tal punto, que existen islas formadas de estos desechos, literalmente hablando están rellenas de plástico. </p>
+		</div>	
+	  </div>
+ 	<div class="img">
+	<img
+	src= "file:///C:/Users/Andrea/Desktop/Web_ACINFANTE/Img/Cuidad.jpg" alt="Honolulú" width="750" title="Honolulú">
+	</div>
+</div>
+	  <h2 class="title"><a name="presentacion"><b>Bienvenido a Honolulú</b></a></h2>
+  <section></section>
+	<div class="container">
+	  <h2><b>Presentación de la protegonista</b></h2>
+	  <p>Relleno de plástico, cuenta la historia de Tessa, una persona del año 2080, que tiene 54 años, vive en una isla llamada Honolulú, su historia trata de como en el futuro, hay tanta contaminación provocada por gases tóxicos de las plantas nucleares y desechos plásticos, que literalmente vive en una isla hecha de plástico, junto animales y sirenas mutantes, que pueden pasar como un buen platillo de pescado.</p>
+	</div>  
+    <script type="text/javascript">
+        var section= document.querySelector('section');
+		window.addEventListener('scroll', function(){
+		      var value = window.scrollY;
+			  section.style.clipPath = "circle("+ value +"px at center)"
+		})
+    </script>
+<div class= "container2">
+	<h6><a name=isla><b>La Isla</b></a></h6>
+	<img src="Img/Información Isla.jpg" width="800" alt= "Isla Honolulú" title="Isla Honolulú">
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<div class="center-box">
+    <div class="m1">
+		<ion-icon name="skull-outline"></ion-icon>
+		<p> Se formó en el año 2050, por la acumulación de desechos plásticos</p>
+		</div>
+	<div class="m2">
+		<ion-icon name="earth-outline"></ion-icon>
+		<p>Se localiza en lo que antes se conocía como Hawái</p>
+		</div>
+	<div class="m3">
+		<ion-icon name="man-outline"></ion-icon>
+		<p>Tiene una población de 500 personas y bajando</p>
+		</div>
+	<div class="m4">
+		<ion-icon name="business-outline"></ion-icon>
+		<p>Es la primera isla de plástico que inauguró una planta nuclear</p>
+		</div>
+	  </div>
+</div>
+<div class= "container">
+	<br>
+	<h5><a name="impacto"><b>Impacto Ambiental</b></a></h5>
+	<br>
+	<div class="galery">
+	  	<div class="imgBx">
+		   <img src="Img/Mutaciones.jpg">
+		</div>
+	<div class="text">
+		<h4><b>Mutaciones</b><br><span>Sirena radioactiva</span></h4>
+		</div>
+	  </div>
+	<div class="galery">
+	  	<div class="imgBx">
+		   <img src="Img/Planta nuclear.png">
+		</div>
+	<div class="text">
+		<h4><b>Planta Nuclear</b><br><span>Desechos tóxicos</span></h4>
+		</div>
+	  </div>
+	<div class="galery">
+	  	<div class="imgBx">
+		   <img src="Img/Comida radiactiva.jpg">
+		</div>
+	<div class="text">
+		<h4><b>Comida Radioactiva</b><br><span>alimentos putrefactos</span></h4>
+		</div>
+	  </div>
+</div>
+<div class="container3">
+	<h6><a name="fin"><b>¿Fin?</b></a></h6>
+	<br>
+	<div class="post">
+		<img src="Img/Basura.jpg" alt"lleno de plástico" title="lleno de plástico" width="800">
+		<div class="post-s">
+			<p>Al finalizar la historia Tessa piensa en su abuela, una persona que vivió en el año 2020; en cómo su generación tuvieron la oportunidad de hacer algo, pudieron detener toda la contaminación, evitando que esas islas se formen y los daños en el ambiente, ya conoces su historia, ahora es tiempo de cambiarla. </p>
+			</div>
+		</div>
+	  </div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	
+<script src="js/jquery-3.3.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+  </body>
+</html>
